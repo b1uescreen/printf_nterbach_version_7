@@ -69,9 +69,8 @@ static char	*uitoa(unsigned int n)
 }
 
 /*
-	Provides a raw unsigned int to decimal string conversion with reversed
-	order of characters.
-	Terminates with -7.
+	Helper function to restore the correct order to the otherwise reversed
+	"temp" string of "uitoa()". Terminates with -7.
 */
 static char	*rvrs_cpy(char *src, int rvrs_ndx)
 {
